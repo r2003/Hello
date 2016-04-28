@@ -35,6 +35,23 @@ public class TestDic
        Console.WriteLine("Add 1000000(string) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds); 
     }
     
+    public static void Test3()
+    {
+        Console.WriteLine(string.Intern("abc"));
+        Console.WriteLine(string.Intern("a"+"b"+"c"));
+        Console.WriteLine(string.Intern("abc").GetHashCode());
+        Console.WriteLine(string.Intern("a"+"b"+"c").GetHashCode());  
+        
+        
+    }
+    
+    public static void Test4()
+    {
+        Console.WriteLine(1);
+        Console.WriteLine(~1);        
+        Console.WriteLine(0);
+        Console.WriteLine(~0);           
+    }
         
 }
 

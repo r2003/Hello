@@ -21,7 +21,9 @@ public class program
         */
         TestDic.Test1();
         TestDic.Test2();
-        
+        TestDic.Test3();
+        TestDic.Test4();       
+                
         Console.ReadLine();
     }  
 }
