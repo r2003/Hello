@@ -2,14 +2,23 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": ".NET Core Launch (console)",
-            "type": "coreclr",
+            "name": "Launch",
+            "type": "mono",
             "request": "launch",
-            "preLaunchTask": "build",
-            "program": "${workspaceRoot}/bin/Debug/dnxcore50/vs.dll",
+            "program": "${workspaceRoot}/ConsoleApplication.exe",
             "args": [],
             "cwd": "${workspaceRoot}",
-            "stopAtEntry": false
+            "preLaunchTask": "",
+            "runtimeExecutable": null,
+            "env": {},
+            "externalConsole": true
+        },
+        {
+            "name": "Attach",
+            "type": "mono",
+            "request": "attach",
+            "address": "localhost",
+            "port": 55555
         }
     ]
 }

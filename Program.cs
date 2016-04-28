@@ -4,7 +4,12 @@ public class program
 {
     public static void Main()
     {
-        //Consol.WriteLine("Test");
+        Console.WriteLine("Test");
+        for(var i=0;i<10000000;i++)
+        {
+            Console.WriteLine(i);
+            
+        }
         Console.ReadLine();
     }  
 }
