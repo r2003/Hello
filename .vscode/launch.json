@@ -1,17 +1,15 @@
 {
-	"version": "0.2.0",
-	"configurations": [
-		{
-			"name": ".NET Core Launch (console)",
-			"type": "coreclr",
-			//"type": "mono",
-			//"request": "launch",
-			//"preLaunchTask": "build",
-			"program": "${workspaceRoot}/Program.cs",
-			//"args": [],
-			"cwd": "${workspaceRoot}"
-			//,"stopAtEntry": false
-			
-		}
-	]
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceRoot}/bin/Debug/dnxcore50/vs.dll",
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "stopAtEntry": false
+        }
+    ]
 }

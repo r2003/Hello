@@ -1,0 +1,25 @@
+{
+    "compile": "*.cs",
+    
+    "configurations": {
+    "Debug": {
+      "compilationOptions": {
+        "define": ["DEBUG", "TRACE"]
+      }
+    }},
+    "Release": {
+      "compilationOptions": {
+        "define": ["RELEASE", "TRACE"],
+        "optimize": true
+      }
+    },
+"dependencies": {
+    "NETStandard.Library": "1.0.0-rc3-23829",
+    "System.Console":"4.0.0-rc3-23829"
+  },
+    
+  "frameworks": {
+    "dnxcore50": { 
+    }
+  }
+}

@@ -1,8 +1,10 @@
-public class Program
+using System;
+
+public class program
 {
-    public static void Main(String[] args)
+    public static void Main()
     {
-        Consol.WriteLine("Test");
-        Consol.ReadLine();
+        //Consol.WriteLine("Test");
+        Console.ReadLine();
     }  
 }
