@@ -10,6 +10,7 @@ public class program
             Console.WriteLine(i);
             
             
+            
         }
         Console.ReadLine();
     }  
