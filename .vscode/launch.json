@@ -12,13 +12,6 @@
             "runtimeExecutable": null,
             "env": {},
             "externalConsole": true
-        },
-        {
-            "name": "Attach",
-            "type": "mono",
-            "request": "attach",
-            "address": "localhost",
-            "port": 55555
         }
     ]
 }

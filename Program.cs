@@ -23,7 +23,9 @@ public class program
         TestDic.Test2();
         TestDic.Test3();
         TestDic.Test4();       
-                
+         TestDic.Test5();  
+         
+                        
         Console.ReadLine();
     }  
 }

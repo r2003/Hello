@@ -10,15 +10,23 @@ public class TestDic
     {
        var stopwatch = new Stopwatch();
        stopwatch.Start();
-       var dictionary = new Dictionary<int,int>();
-       for(var i=0;i<1000000;i++)
+       var dictionary = new Dictionary<int,int>(10000000);
+       for(var i=0;i<10000000;i++)
        {
            dictionary.Add(i,i);
            
        }
        stopwatch.Stop();
-       Console.WriteLine("Add 1000000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds); 
-       Console.WriteLine(dictionary[9999]);
+       Console.WriteLine("Add 10 000 0000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds); 
+       stopwatch.Start();
+       long sum = 0;
+       for(var i=0;i<10000000;i++)
+       {
+           sum+= dictionary[i];
+       }
+       stopwatch.Stop();
+       Console.WriteLine("Read 10 000 000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);    
+       
     }
     
     public static void Test2()
@@ -51,6 +59,36 @@ public class TestDic
         Console.WriteLine(~1);        
         Console.WriteLine(0);
         Console.WriteLine(~0);           
+    }
+    
+    public static void Test5()
+    {
+       var stopwatch = new Stopwatch();
+       stopwatch.Start();        
+        
+        var d = new Dictionary<int,Dictionary<int,int>>();
+        for(var i=0;i<10000;i++)
+        {
+            var b = new Dictionary<int,int>();
+            for(var j=0;j<1000;j++)
+            {
+                b.Add(j,j*i);
+            }
+            d.Add(i,b);
+        }
+       stopwatch.Stop();
+       Console.WriteLine("Add 10 000 000(int) elements to double dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);         
+       long sum = 0;
+       stopwatch.Start();        
+        for(var i=0;i<10000;i++)
+        {
+            for(var j=0;j<1000;j++)
+            {
+                sum+= d[i][j];
+            }
+        }
+       stopwatch.Stop();
+       Console.WriteLine("Read 10 000 000(int) elements to double dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);    
     }
         
 }
