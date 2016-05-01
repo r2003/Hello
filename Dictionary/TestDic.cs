@@ -25,8 +25,7 @@ public class TestDic
            sum+= dictionary[i];
        }
        stopwatch.Stop();
-       Console.WriteLine("Read 10 000 000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);    
-       
+       Console.WriteLine("Read 10 000 000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);            
     }
     
     public static void Test2()

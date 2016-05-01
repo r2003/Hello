@@ -21,6 +21,7 @@ public class program
         */
         TestDic.Test1();
         TestArray.Test1();
+        TestQueue.Test1();
         TestDic.Test2();
         TestDic.Test3();
         TestDic.Test4();       
