@@ -20,6 +20,7 @@ public class program
        Console.WriteLine(a.Elapsed.TotalMilliseconds);
         */
         TestDic.Test1();
+        TestArray.Test1();
         TestDic.Test2();
         TestDic.Test3();
         TestDic.Test4();       

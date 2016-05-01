@@ -5,6 +5,7 @@
     <ItemGroup>
         <CSFile Include = "program.cs"/>
         <CSFile Include = "Dictionary\TestDic.cs"/>
+        <CSFile Include = "Dictionary\TestArray.cs"/>
     </ItemGroup>
 
     <Target Name = "Build">
