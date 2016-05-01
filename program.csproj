@@ -1,6 +1,14 @@
 <Project DefaultTargets = "Build"
     xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
+  <PropertyGroup>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <WarningLevel>4</WarningLevel>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
     <!-- Specify the inputs by type and file name -->
     <ItemGroup>
         <CSFile Include = "program.cs"/>
