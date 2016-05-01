@@ -18,7 +18,9 @@
          <CSC  Sources = "@(CSFile)"
             DebugType="pdbonly"
             Optimize="yes"
-            OutputAssembly="ConsoleApplication.exe" >           
+            OutputAssembly="ConsoleApplication.exe" 
+            Platform="x64"
+            >           
             
 
             <!-- Set the OutputAssembly attribute of the CSC task to the name of the executable file that is created -->
