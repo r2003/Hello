@@ -24,7 +24,7 @@ public class TestArray
            sum+= array[i];
        }
        stopwatch.Stop();
-       Console.WriteLine("Read 10 000 000(int) elements to dictionary: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);    
+       Console.WriteLine("Read 10 000 000(int) elements to array: {0} ms.",stopwatch.Elapsed.TotalMilliseconds);    
     
     }
  
