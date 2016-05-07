@@ -30,7 +30,9 @@ public class program
         TestInterlocked.Test1();  
         TestInterlocked.Test2();        
         TestInterlocked.Test3();   */
-        TestStopWatch.Test1(); 
+        //TestStopWatch.Test1(); 
+        TestStopWatch.TestPrecision();
+        
                                 
         Console.ReadLine();
     }  
