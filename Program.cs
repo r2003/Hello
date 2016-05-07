@@ -27,7 +27,11 @@ public class program
         TestDic.Test4();       
          TestDic.Test5();  
          
-                        
+        TestInterlocked.Test1();  
+        TestInterlocked.Test2();        
+        TestInterlocked.Test3();   
+                 
+                                
         Console.ReadLine();
     }  
 }
