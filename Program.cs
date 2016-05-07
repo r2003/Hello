@@ -19,7 +19,7 @@ public class program
        a.Stop();
        Console.WriteLine(a.Elapsed.TotalMilliseconds);
         */
-        TestDic.Test1();
+        /*TestDic.Test1();
         TestArray.Test1();
         TestQueue.Test1();
         TestDic.Test2();
@@ -29,8 +29,8 @@ public class program
          
         TestInterlocked.Test1();  
         TestInterlocked.Test2();        
-        TestInterlocked.Test3();   
-                 
+        TestInterlocked.Test3();   */
+        TestStopWatch.Test1(); 
                                 
         Console.ReadLine();
     }  

@@ -16,6 +16,7 @@
         <CSFile Include = "Dictionary\TestArray.cs"/>
         <CSFile Include = "Dictionary\TestQueue.cs"/>
         <CSFile Include = "Dictionary\TestInterlocked.cs"/>
+        <CSFile Include = "StopWatch\TestStopWatch.cs"/>
     </ItemGroup>
 
     <Target Name = "Build">
