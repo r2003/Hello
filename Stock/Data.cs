@@ -20,7 +20,26 @@ public class Data
        //Строить стратегию текущего дня по предыдущему типу дня.
        //Не торговать рядом с праздниками.
        
+       //Максимальный последовательный рост.
+       //Максимальное последовательное падение.
+       //Количество событий изменений направлений тренда цены.
+       //
+       //Одна сделка в дне покупка-продажа или продажа-покупка
+       //Две таких сделки.
+       
+       
        var txt = File.ReadAllText("Data/20160412/SBER/AllTrade.log");
-       Console.WriteLine(txt[1]);
+       var str = txt.Split('\n');
+       foreach(var line in str)
+       {
+           if(string.IsNullOrEmpty(line))
+           {
+                continue;               
+           }
+           
+           var values = line.Split('\t');
+           Console.WriteLine("-{0}+{1}",line,values[2]);
+       }
+
     }
 }
