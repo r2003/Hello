@@ -31,8 +31,8 @@ public class program
         TestInterlocked.Test2();        
         TestInterlocked.Test3();   */
         //TestStopWatch.Test1(); 
-        TestStopWatch.TestPrecision();
-        
+        //TestStopWatch.TestPrecision();
+        Data.Test1();
                                 
         Console.ReadLine();
     }  
