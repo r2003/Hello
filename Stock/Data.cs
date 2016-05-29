@@ -33,6 +33,12 @@ public class Data
        double before2 = 0;//front
        var after = 0;//rear
        
+       double vertex = 0;
+       double cavity = 0;
+       
+       var lowCount = 0;
+       var hightCount = 0;
+       
        
        var txt = File.ReadAllText("Data/20160412/SBER/AllTrade.log");
        var str = txt.Split('\n');
@@ -49,18 +55,31 @@ public class Data
                continue;
            }
            double price; 
-           if(!double.TryParse(values[9], out price))
+           if(!double.TryParse(values[9].TrimEnd(new char[]{','}).Replace(',','.'), out price))
            {
                continue;
            }
-           Console.WriteLine("{0}\t{1}\t{2}",before1,before2,price);
-           
-           
+           //Console.WriteLine("{0}\t{1}\t{2}",before2,before1,price);
+           if(before2>before1 && before1<price)
+           {
+               lowCount++;
+               
+               Console.WriteLine("{0}\t{1}\t{2}\t-\t{3}\t{4}",cavity,vertex,before1,vertex-cavity,vertex-before1);
+               
+               cavity=before1;
+           }
+           if(before2<before1 && before1>price)
+           {
+               hightCount++;
+               vertex=before1;
+           }
+                     
            before2 = before1;
            before1 = price;
            
            
        }
+       Console.WriteLine("lowCount: {0}, hightCount: {1}",lowCount,hightCount);
 
     }
 }
